@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trabalhe Conosco | Astro&Nota - Escola de Música </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/forms.css')}}">
+        <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
+    </head>
+    <body>
+        <header>
+            <div class ="header">
+                <ul>
+                    <a href="/"><img id="logo" src="../static/img/logo.png" width="200px"></a>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-facebook.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-youtube.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <nav id="menu">
+                 <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/sobre">SOBRE</a></li>
+                    <li><a href="/cursos">CURSOS</a></li>
+                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
+                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="corpo">
+            <div id="carreira"> 
+                <h2>Trabalhe Conosco</h2>
+                <p class="descricao">Venha fazer parte do nosso time!</p>
+                <form action="mailto:" method="POST" enctype="text/plain" name="curriculo" id="form-curriculo">
+                    <div>
+                        <label for="nome">*Nome:</label>
+                        <input type="text" id="nome" name="usuario_nome" placeholder="Nome Completo"/>
+                        <label for="cpf">*CPF:</label>
+                        <input type="text" id="cpf" name="usuario_cpf" placeholder="999.999.999-99">
+                    </div>
+                    <div>
+                        <label for="email">*E-mail:</label>
+                        <input type="email" id="email" name="usuario_email" placeholder="exemplo@exemplo.com"/>
+                        <label for="number">*Telefone:</label>
+                        <input type="text" name="usuario_tel" id="number" placeholder="(00) 00000-0000">
+                    </div>
+                    <div>
+                        <label for="atuacao">*Área de Atuação:</label>
+                        <select id="atuacao" name="area_atuacao">
+                            <option value="" selected>Escolha a área desejada</option>
+                            <option value="Adm">Administrativa</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Professor">Professor(a) de Música</option>
+                            <option value="Vendas">Vendas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>*Anexe seu currículo</label>
+                        <input type="file" value="" name="curriculo" id="curriculo">
+                    </div>
+                    <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea id="msg" name="usuario_msg"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" onclick="validarCurriculo();">ENVIAR DADOS</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <footer id="rodape">
+            <nav id="rodape-menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/sobre">SOBRE</a></li>
+                    <li><a href="/cursos">CURSOS</a></li>
+                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
+                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+            <div id="copyright">
+                <p> Copyright &copy 2021 Astro&Nota Escola de Música. Todos os direitos reservados</p>
+                <p>Desenvolvido por Gabriela Garcia. <br> Background by Hubble Space Telescope | NASA.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+/*Formulário de contato*/
+#form-contato {
+    margin: 0 auto;
+    width: 700px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+#form-contato div + div {
+margin-top: 1em;
+}
+
+#form-contato label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+#form-contato input, textarea {
+    font: 1.2em monospace;
+    width: 320px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+#form-contato input:focus, textarea:focus {
+    border-color: #000;
+}
+
+#form-contato textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+#form-contato button {
+    width: 200px;
+    padding: 0.9em;
+    background-color: #FF8000;
+    color: white;
+    margin-left: 260px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Formulário Pré-Matrícula*/
+#form-matricula {
+    width: 1000px;
+    margin-left: 115px;
+    padding: 2em;
+    border: 1px solid #999;
+    border-radius: 2em;
+}
+
+#form-matricula  div + div {
+    margin-top: 1.3em;
+}
+
+#form-matricula label {
+    width: 220px;
+    display: inline-block;
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+#form-matricula input {
+    font-family: sans-serif;
+    width: 250px;
+    border: 1px solid #999;
+}
+
+#form-matricula select#cursos {
+    padding-right: 2em;
+    margin-right: 125px;
+    text-align: center;
+}
+
+#form-matricula .radioB {
+    text-align: left;
+    width: 20px;
+}
+
+#form-matricula button {
+    width: 200px;
+    padding: 0.9em;
+    background-color: #FF8000;
+    color: white;
+    margin-left: 220px;
+    margin-right: 1px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Formulário Currículo*/
+#form-curriculo {
+    margin-left: 115px;
+    width: 1000px;
+    padding: 2em;
+    border: 1px solid #999;
+    border-radius: 2em;
+}
+
+#form-curriculo  div + div {
+    margin-top: 1.3em;
+}
+
+#form-curriculo label {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+#form-curriculo input {
+    font-family: sans-serif;
+    width: 270px;
+    border: 1px solid #999;
+}
+
+#form-curriculo select#atuacao {
+    padding-right: 2em;
+    margin-right: 125px;
+}
+
+#form-curriculo #curriculo {
+    width: 300px;
+}
+
+#form-curriculo textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+#form-curriculo button {
+    width: 200px;
+    padding: 0.9em;
+    background-color: #FF8000;
+    color: white;
+    margin-left: 400px;
+    border: none;
+    border-radius: 5px;
+}

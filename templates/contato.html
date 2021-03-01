@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contato | Astro&Nota - Escola de Música </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/forms.css')}}">
+        <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
+    </head>
+    <body>
+        <header>
+            <div class ="header">
+                <ul>
+                    <a href="/"><img id="logo" src="../static/img/logo.png" width="200px"></a>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-facebook.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-youtube.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/sobre">SOBRE</a></li>
+                    <li><a href="/cursos">CURSOS</a></li>
+                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
+                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="corpo">
+            <div class="contato">
+                <h2>Contato</h2>
+                <div class="info-contato">
+                    <p>Av. Expedicionário Osvaldo Almeida Ramos nº 280, Centro – Vassouras – RJ – CEP: 27700-000 </p>
+                    <p>
+                        Tel/Fax: (24) 2471-XXXX | contato@astroenota.com.br
+                    </p>
+                    <p>
+                        Horários de Funcionamento: 8h às 17h de segunda a sexta e sábado de 8h às 16h.
+                    </p>
+                </div>
+                <h3>Formulário de Contato</h3>
+                <form action="mailto:" 
+                    method="POST" 
+                    enctype="text/plain" 
+                    name="contato" 
+                    id="form-contato"
+                >
+                    <div>
+                        <label for="nome">*Nome:</label>
+                        <input type="text" id="nome" name="usuario_nome" />
+                    </div>
+                    <div>
+                        <label for="email">*E-mail:</label>
+                        <input type="email" id="email" name="usuario_email"/>
+                    </div>
+                    <div>
+                        <label for="assunto">*Assunto:</label>
+                        <input type="text" id="assunto" name="usuario_assunto" />
+                    </div>
+                    <div>
+                        <label for="msg">*Mensagem:</label>
+                        <textarea id="msg" name="usuario_msg"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" value="submit" onclick="validarContato();">ENVIAR MENSAGEM</button>
+                    </div>
+                </form>
+            </div>
+            <div id="localizacao">
+                <h3>Venha nos fazer uma visita</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471922.72234762367!2d-44.143960933844134!3d-22.470532073885476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9930cf7c22de05%3A0xc63f64f24c89cbf6!2sUniversidade%20de%20Vassouras!5e0!3m2!1spt-BR!2sbr!4v1589293329884!5m2!1spt-BR!2sbr" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa">
+                </iframe>
+            </div>
+        </article>
+        <footer id="rodape">
+            <nav id="rodape-menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/sobre">SOBRE</a></li>
+                    <li><a href="/cursos">CURSOS</a></li>
+                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
+                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+            <div id="copyright">
+                <p> Copyright &copy 2021 Astro&Nota Escola de Música. Todos os direitos reservados</p>
+                <p>Desenvolvido por Gabriela Garcia. <br> Background by Hubble Space Telescope | NASA.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    {% block head %}
+    <title>Astro&Nota - Escola de Música </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+   {% endblock %}
+</head>
+<body>
+
+    {% include "/partials/header.html" %}
+
+    {% include "/partials/menu.html" %}
+    <div class="main_container">
+        {% block content %} {% endblock %}
+    </div>
+ 
+
+    {% include "/partials/footer.html" %}
+    
+    {% block scripts %}
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
+
+    {% endblock  %}
+</body>
+</html>

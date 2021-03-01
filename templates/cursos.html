@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nossos Cursos | Astro&Nota - Escola de Música </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <header>
+            <div class ="header">
+                <ul>
+                    <a href="/"><img id="logo" src="../static/img/logo.png" width="200px"></a>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-facebook.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../static/img/icon-youtube.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/sobre">SOBRE</a></li>
+                    <li><a href="/cursos">CURSOS</a></li>
+                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
+                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="corpo">
+            <div id="cursos">
+                <h2>Nossos Cursos</h2>
+                <p class="descricao">"Quem faz música inspira sonhos, inspira amor."</p>
+                <table id="cursos">
+                    <tr>
+                        <td>
+                            <a href="/sopro">
+                                <figure>
+                                    <img src="../static/img/curso-sopro.png" alt="Instrumentos de Sopro" width="220px">
+                                    <figcaption>Instrumentos de Sopro</figcaption>
+                                </figure>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="/corda">
+                                <figure>
+                                    <img src="../static/img/curso-corda.png" alt="Instrumentos de Corda" width="220px">
+                                    <figcaption>Instrumentos de Corda</figcaption>
+                                </figure>
+                            </a>
+                        </td>
+                        <td>
+                           <a href="/piano">
+                               <figure>
+                                    <img src="../static/img/curso-piano.png" alt="Piano e Teclado" width="220px">
+                                    <figcaption>Piano e Teclado</figcaption>
+                               </figure>
+                           </a>
+                        </td>
+                        <td>
+                            <a href="/canto">
+                                <figure>
+                                     <img src="../static/img/curso-canto.png" alt="Curso de Técnica Vocal" width="220px">
+                                     <figcaption>Curso de Técnica Vocal</figcaption>
+                                </figure>
+                            </a>
+                         </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <footer id="rodape">
+            <nav id="rodape-menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/sobre">SOBRE</a></li>
+                    <li><a href="/cursos">CURSOS</a></li>
+                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
+                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+            <div id="copyright">
+                <p> Copyright &copy 2021 Astro&Nota Escola de Música. Todos os direitos reservados</p>
+                <p>Desenvolvido por Gabriela Garcia. <br> Background by Hubble Space Telescope | NASA.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,269 @@
+  
+/*@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); /* fonte do título da seção
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');  /* fonte do menu *
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap'); /*fonte de paragráfo e corpo *
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap'); /*fonte da descrição*/ 
+
+body {
+    background-image: url("../img/bg-light-echo.jpg");
+    color: white;
+}
+
+article.corpo {
+    background: #00000073;
+}
+
+p {
+    text-align: justify;
+    font-size: 13pt;
+    font-family: 'Sen';
+}
+
+.descricao {
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'Barlow';
+}
+
+h1{
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Muli';
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Muli';
+    color: #ffffff;
+    font-size: 25pt;
+    background-color: #FF8000;
+    padding: 0.6em;
+    margin-right: 100px;
+    margin-left: 90px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Muli';
+    color: #FF8000;
+    font-size: 15pt;
+}
+
+/*Logo e Redes Sociais*/
+header {
+    height: 100px;
+    border-bottom: 1px solid #999;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+div.header ul {
+    list-style: none;
+    margin: 10px 50px 10px 0px;
+}
+
+div.header li {
+    padding: 5px;
+    padding-top: 40px;
+    float: right;
+}
+
+div.header img {
+    float: left;
+}
+
+
+/* formatação do menu */
+nav#menu {
+    display: block;
+    border-bottom: 1px solid #999;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav#menu ul {
+    list-style: none;
+    font-size: 15pt;
+    margin-left: 5px;
+}
+
+nav#menu li {
+    display: inline-block;
+    font-family: 'MontSerrat';
+    color: #ffffff;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+nav#menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #FF8000;
+}
+
+/* fim da formatação do menu */
+
+div#boas-vindas{
+    height: 380px;
+}
+
+div#boas-vindas header {
+    padding-top: 15px;
+    border: none;
+}
+
+div#boas-vindas img {
+    margin-left: 300px;
+    margin-top: -120px;
+}
+
+div#cursos {
+    height: 470px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+table#cursos {
+    margin-left: 35px;
+}
+
+table#cursos figcaption {
+    text-align: center;
+    font-size: 13pt;
+    color: white;
+    font-weight: bold;
+}
+
+table#cursos a {
+    text-decoration: none;
+}
+
+div#depoimentos {
+    height: 1300px;
+    margin-left: 20px;
+}
+
+div#depoimentos div {
+    margin-left: 150px;
+}
+
+div#depoimentos img {
+    padding-bottom: 3px;
+}
+
+div#sobre {
+    height: 650px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+div#sobre p {
+    margin-left: 130px;
+}
+
+div#sobre a {
+    color: #FF8000;
+}
+
+table#img-sobre {
+    margin-left: 130px;
+}
+
+div.info-cursos p{
+    margin-left: 240px;
+}
+
+div.info-cursos h4, div.info-cursos a{
+    margin-left: 240px;
+    font-family: 'Muli';
+    color: #FF8000;
+    font-size: 14pt;
+}
+
+.capa-cursos {
+    margin-left: 230px;
+}
+
+div.contato {
+    height: 600px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+div.info-contato {
+    margin-left: 300px;
+    text-align: center;
+}
+
+.mapa {
+    margin-left: 280px;
+}
+
+div#pre-matricula {
+    height: 700px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+div#carreira {
+    height: 600px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+/*Rodapé*/
+table#menu_rodape {
+    padding-top: 1em;
+    margin-left: 2em;
+}
+
+table#menu_rodape td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+nav#rodape-menu ul {
+    list-style: none;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+
+nav#rodape-menu li {
+    display: inline-block;
+    font-family: 'MontSerrat';
+    color: #ffffff;
+    font-size: 13pt;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+nav#rodape-menu li:hover {
+    color: #FF8000;
+}
+
+nav#rodape-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav#rodape-menu a:hover {
+    color: #FF8000;
+}
+
+div#copyright p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer#rodape {
+    height: 220px;
+    background-color: black;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
