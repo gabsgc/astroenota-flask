@@ -1,47 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Astro&Nota - Escola de Música </title>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-        <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
-    </head>
-    <body>
-        <header>
-            <div class ="header">
-                <ul>
-                    <a href="/"><img id="logo" src="../static/img/logo.png" width="200px"></a>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="../static/img/icon-facebook.png"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="../static/img/icon-instagram.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="../static/img/icon-youtube.png" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/sobre">SOBRE</a></li>
-                    <li><a href="/cursos">CURSOS</a></li>
-                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
-                    <li><a href="/contato">CONTATO</a></li>
-                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
-                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
-                </ul>
-            </nav>
-        </div>
+{% extends 'base.html' %}
+
+{% block title %}<title>Astro&Nota - Escola de Música </title>{% endblock %}
+{% block content %}
         <article class="corpo">
             <div id="boas-vindas">
                 <header>
@@ -54,7 +14,7 @@
                 <table id="cursos">
                     <tr>
                         <td>
-                            <a href="sopro.html">
+                            <a href="/sopro">
                                 <figure>
                                     <img src="../static/img/curso-sopro.png" alt="Instrumentos de Sopro" width="220px">
                                     <figcaption>Instrumentos de Sopro</figcaption>
@@ -62,7 +22,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="corda.html">
+                            <a href="/corda">
                                 <figure>
                                     <img src="../static/img/curso-corda.png" alt="Instrumentos de Corda" width="220px">
                                     <figcaption>Instrumentos de Corda</figcaption>
@@ -70,7 +30,7 @@
                             </a>
                         </td>
                         <td>
-                           <a href="piano.html">
+                           <a href="/piano">
                                <figure>
                                     <img src="../static/img/curso-piano.png" alt="Piano e Teclado" width="220px">
                                     <figcaption>Piano e Teclado</figcaption>
@@ -78,7 +38,7 @@
                            </a>
                         </td>
                         <td>
-                            <a href="canto.html">
+                            <a href="/canto">
                                 <figure>
                                      <img src="../static/img/curso-canto.png" alt="Curso de Técnica Vocal" width="220px">
                                      <figcaption>Curso de Técnica Vocal</figcaption>
@@ -96,28 +56,7 @@
                     <img src="../static/img/depoimento3.png" alt="Depoimento João" width="1000px">
                 </div>
             </div>
-            <!--
-            <audio autoplay preload="auto" style=" width:100px;">
-                <source src="audio/soundtrack-movie.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>-->
         </article>
-        <footer id="rodape">
-            <nav id="rodape-menu">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/sobre">SOBRE</a></li>
-                    <li><a href="/cursos">CURSOS</a></li>
-                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
-                    <li><a href="/contato">CONTATO</a></li>
-                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
-                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
-                </ul>
-            </nav>
-            <div id="copyright">
-                <p> Copyright &copy 2021 Astro&Nota Escola de Música. Todos os direitos reservados</p>
-                <p>Desenvolvido por Gabriela Garcia. <br> Background by Hubble Space Telescope | NASA.</p>
-            </div>
-        </footer>
-    </body>
-</html>
+
+{% endblock %}
+{% block scripts %}{% endblock %}

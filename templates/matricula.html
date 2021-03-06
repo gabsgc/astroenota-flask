@@ -1,53 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Pré-Matrícula | Astro&Nota - Escola de Música </title>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/forms.css')}}">
-        <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
-    </head>
-    <body>
-        <header>
-            <div class ="header">
-                <ul>
-                    <a href="/"><img id="logo" src="../static/img/logo.png" width="200px"></a>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="../static/img/icon-facebook.png"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="../static/img/icon-instagram.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="../static/img/icon-youtube.png" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/sobre">SOBRE</a></li>
-                    <li><a href="/cursos">CURSOS</a></li>
-                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
-                    <li><a href="/contato">CONTATO</a></li>
-                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
-                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
-                </ul>
-            </nav>
-        </div>
+{% extends 'base.html' %}
+
+{% block title %}<title>Pré-matrícula | Astro&Nota - Escola de Música </title>{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{url_for('static', filename='css/forms.css')}}">{% endblock %}
+{% block content %}
         <article class="corpo">
             <div id="pre-matricula">
                 <h2>Pré-Matrícula</h2>
                 <p class="descricao">Preencha o formulário abaixo e realize a sua pré-matrícula</p>
-                <form method="post" action="mailto:" enctype="text/plain" name="matricula" id="form-matricula">
+                <form method="post" enctype="text/plain" name="matricula" id="form-matricula">
                     <div>
                         <div>
                             <label for="nome">*Nome:</label>
@@ -119,22 +79,6 @@
                   </form>  
             </div>
         </article>
-        <footer id="rodape">
-            <nav id="rodape-menu">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/sobre">SOBRE</a></li>
-                    <li><a href="/cursos">CURSOS</a></li>
-                    <li><a href="/#depoimentos">DEPOIMENTOS</a></li>
-                    <li><a href="/contato">CONTATO</a></li>
-                    <li><a href="/matricula">PRÉ-MATRÍCULA</a></li>
-                    <li><a href="/carreira">TRABALHE CONOSCO</a></li>
-                </ul>
-            </nav>
-            <div id="copyright">
-                <p> Copyright &copy 2021 Astro&Nota Escola de Música. Todos os direitos reservados</p>
-                <p>Desenvolvido por Gabriela Garcia. <br> Background by Hubble Space Telescope | NASA.</p>
-            </div>
-        </footer>
-    </body>
-</html>
+        
+{% endblock %}
+{% block scripts %}{% endblock %}

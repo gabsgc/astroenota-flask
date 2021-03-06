@@ -2,10 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    {% block head %}
-    <title>Astro&Nota - Escola de Música </title>
+    {% block title %} <title>Astro&Nota - Escola de Música </title> {% endblock %}
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-   {% endblock %}
+    {% block styles %}   {% endblock %}
 </head>
 <body>
 
@@ -19,10 +18,10 @@
 
     {% include "/partials/footer.html" %}
     
-    {% block scripts %}
+ 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <script src="{{url_for('static', filename='js/funcoes.js')}}"></script>
 
-    {% endblock  %}
+    {% block scripts %} {% endblock  %}
 </body>
 </html>
